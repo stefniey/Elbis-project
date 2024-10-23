@@ -1,0 +1,14 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5433,
+    "username": "Elbis",
+    "password": "elbis123",
+    "database": "elbisdb",
+    "synchronize": true,
+    "logging": false,
+    "entities": ["src/entity/**/*.ts"],
+    "migrations": ["src/migration/**/*.ts"],
+    "subscribers": ["src/subscriber/**/*.ts"]
+  }
+  

@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slide {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.page,
+.about,
+.login,
+.patner,
+.reg,
+.rent,
+.rent,
+.tier1,
+.tier2,
+.tier3,
+.utilities {
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 200%;
+    animation: slide 15s linear infinite;
+
+}
+
+.slider img {
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+/* styles.css */
+
+.headers {
+    display: flex;
+    flex-direction: column; /* Column layout for mobile and medium screens */
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column; /* Column layout for mobile and md */
+  }
+  
+  @media (min-width: 768px) {
+    .headers {
+      flex-direction: column; /* Keep column layout for medium screens */
+    }
+  
+    .header {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .headers {
+      flex-direction: row; /* Row layout for large screens */
+    }
+  
+    .header {
+      display: flex; /* Ensures flex layout for large screens */
+    }
+  }
+  
+  /* Additional styles for your components can go here */
+  .bg-cover {
+    background-size: cover;
+  }
+  
+  .bg-center {
+    background-position: center;
+  }
+  
+  /* You can customize other styles based on your design needs */
+  

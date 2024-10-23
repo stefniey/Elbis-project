@@ -1,0 +1,52 @@
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #271785;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+.arrow-icon {
+    vertical-align: middle;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.dropdown-menu {
+    z-index: 10;
+}
+
+.link-hover-underline {
+    position: relative;
+    color: #271785;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+.link-hover-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #271785 0%, #0CD851 100%);
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+.link-hover-underline:hover::after {
+    width: 60%;
+    background: linear-gradient(90deg, #271785 0%, #0CD851 100%);
+}
+
+
+
+
